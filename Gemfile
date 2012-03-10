@@ -7,7 +7,7 @@ gem 'rails', '3.2.0'
 
 gem "geokit", "~> 1.6.5"
 gem "yelpster", "~> 1.1.1"
-gem "devise"
+# gem "devise"
 
 
 group :development do
