@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-LunchBattle::Application.config.secret_token = '488ad73e4646c98dbffe6db5f94ba2cb6e2e5cdf30e5136ee9777ccbc174412254dd78fb5bf6e0b321cc79e4d51cb4417979c345d281005847408a5b2a234217'
+Foodfight::Application.config.secret_token = 'bcac8aff1c8286d2d8fad7872a5bcb3a9e885c058a39e9bf0f1e021a2316c2bfe01d557ec4a7ed991080d81d0fbd852d4f1872f2a80234b8aa1755f4444c27b7'

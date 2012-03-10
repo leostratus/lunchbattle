@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-LunchBattle::Application.load_tasks
+Foodfight::Application.load_tasks
