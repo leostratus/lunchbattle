@@ -1,13 +1,259 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
-*/
+/* line 17, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 46, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+h1, h2, h3, h4, h5 {
+  margin: .65em 0;
+  font-family: "Permanent Marker", cursive;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* line 52, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+body {
+  background: #333333 url(../images/bg-page.png) top center repeat-x;
+  font-family: "Arial", sans-serif;
+}
+
+/* line 58, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 62, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+input[type=text], input[type=password], input[type=email] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #FFF;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  border: 3px solid black;
+  font-size: 14px;
+}
+
+/* line 73, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.button, button, input[type=submit] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: #dd0000;
+  border: 3px solid black;
+  font-family: "Walter Turncoat", cursive;
+  font-size: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+/* line 85, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* line 91, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.panel {
+  position: relative;
+  display: block;
+  background: #FFF;
+  border: 3px solid black;
+  min-height: 100px;
+  margin: 10px;
+}
+
+/* line 96, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate {
+  position: absolute;
+  display: block;
+  padding: 5px 8px;
+  background: #FFF;
+  border: 3px solid black;
+  font-family: "Walter Turncoat", cursive;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: uppercase;
+  max-width: 90%;
+}
+/* line 100, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate.top {
+  top: -10px;
+}
+/* line 103, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate.bottom {
+  bottom: -10px;
+}
+/* line 106, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate.right {
+  right: -10px;
+}
+/* line 109, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate.left {
+  left: -10px;
+}
+/* line 112, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate strong {
+  color: #dd0000;
+}
+/* line 115, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate.emphasis {
+  background: #dd0000;
+  color: #FFF;
+}
+/* line 119, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss */
+.narrate.dark {
+  background: #000;
+  color: #dd0000;
+}
+
+/* line 1, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_header.scss */
+#header {
+  background: transparent url(../images/foodsplosion.png) center center no-repeat;
+  background-size: 500px auto;
+  margin: -55px 0 -25px;
+}
+/* line 7, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_header.scss */
+#header a img {
+  border: 0;
+}
+/* line 11, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_header.scss */
+#header a.logo {
+  display: block;
+}
+/* line 14, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_header.scss */
+#header a.logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* line 3, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home #intro {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  max-width: 480px;
+  min-width: 320px;
+}
+/* line 13, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home #intro .panel {
+  height: 140px;
+  background: #dddddd url(../images/city.jpg) center center no-repeat;
+}
+/* line 20, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home .step {
+  position: relative;
+  display: block;
+  background: #FFF;
+  border: 3px solid black;
+  margin: 10px 0 0;
+  padding: 35px 20px 15px;
+  text-align: center;
+}
+/* line 26, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home .step h3 {
+  margin: 0;
+  font-size: 18px;
+}
+/* line 36, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home .step input[type=text], .home .step input[type=email] {
+  width: 100%;
+  margin: 0 0 10px;
+}
+/* line 40, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home .step a.button {
+  display: block;
+  width: 60%;
+  max-width: 120px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+/* line 50, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home #step1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  min-width: 320px;
+  max-height: 150px;
+}
+/* line 62, /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss */
+.home #step2, .home #step3 {
+  display: none;
+}

@@ -1,0 +1,65 @@
+.home 	{
+
+	#intro	{
+		display: inline-block;
+		vertical-align: top;
+
+		width: 50%;
+		max-width: $landscape;
+		min-width: $portrait;
+
+		//background: rgba(0,0,0,0.5);
+
+		.panel 	{
+			height: 140px;
+
+			background: #DDD url(../images/city.jpg) center center no-repeat;
+		}
+	}
+
+	.step 	{
+		@include panel;
+		margin: 10px 0 0;
+		padding: 35px 20px 15px;
+		text-align: center;
+
+		h3 	{
+			margin: 0;
+			font-size: 18px;
+			//border: $border;
+			//background: #000;
+
+			//@include comic-text-strong;
+			//font-size: 18px;
+			//color: $accent;
+		}
+		input[type=text], input[type=email] 	{
+			width: 100%;
+			margin: 0 0 10px;
+		}
+		a.button	{
+			display: block;
+			width: 60%;
+			max-width: 120px;
+
+			margin: 0 auto;
+			font-size: 18px;
+		}
+	}
+
+	#step1 	{
+		display: inline-block;
+		vertical-align: top;
+		width: 49%;
+		//margin: 10px;
+		min-width: 320px;
+		max-height: 150px;
+		//margin: 10px 0;
+
+		//background: rgba(0,0,0,0.5);
+	}
+
+	#step2, #step3 	{
+		display: none;
+	}
+}

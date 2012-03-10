@@ -1,0 +1,123 @@
+$border: 3px solid #000;
+$accent: #DD0000;
+//$comic-text: 'Patrick Hand', cursive;
+$comic-text-strong: 'Permanent Marker', cursive;
+$comic-text: 'Walter Turncoat', cursive;
+
+$portrait: 320px;
+$landscape: 480px;
+
+
+
+@mixin panel 	{
+	position: relative;
+	display: block;
+
+	background: #FFF;
+	border: $border;
+}
+@mixin narrative 	{
+	position: absolute;
+	display: block;
+	padding: 5px 8px;
+
+	background: #FFF;
+	border: $border;
+
+	font-family: $comic-text;
+	font-size: 14px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+@mixin comic-text 	{
+	font-family: $comic-text;
+	font-size: 15px;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+@mixin comic-text-strong 	{
+	font-family: $comic-text-strong;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+h1, h2, h3, h4, h5 	{
+	margin: .65em 0;
+	@include comic-text-strong;
+	font-weight: normal;
+}
+
+body 	{
+	background: #333 url(../images/bg-page.png) top center repeat-x;
+
+	font-family: "Arial", sans-serif;
+}
+
+a 	{
+	text-decoration: none;
+}
+
+input[type=text], input[type=password], input[type=email] 	{
+	@include box-sizing(border-box);
+	padding: 10px;
+
+	background: #FFF;
+	@include border-radius(8px);
+	border: $border;
+
+	font-size: 14px;
+}
+
+.button, button, input[type=submit] 	{
+	@include box-sizing(border-box);
+	padding: 7px 10px;
+
+	@include border-radius(8px);
+	background: $accent;
+	border: $border;
+
+	@include comic-text;
+	color: #FFF;
+}
+
+.container 	{
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+// COMIC PANEL STYLING
+.panel 	{
+	@include panel;
+	min-height: 100px;
+	margin: 10px;
+}
+.narrate 	{
+	@include narrative;
+	max-width: 90%;
+
+	&.top 	{
+		top: -10px;
+	}
+	&.bottom 	{
+		bottom: -10px;
+	}
+	&.right	{
+		right: -10px;
+	}
+	&.left 	{
+		left: -10px;
+	}
+	strong 	{
+		color: $accent;
+	}
+	&.emphasis 	{
+		background: $accent;
+		color: #FFF;
+	}
+	&.dark 	{
+		background: #000;
+		color: $accent;
+	}
+}
