@@ -5,7 +5,7 @@ gem 'rails', '3.2.0'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem "geokit-rails3"
+gem "geocoder"
 #gem "yelp"
 gem "yelpster"
 # gem "devise"

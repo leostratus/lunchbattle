@@ -1,16 +1,12 @@
-require 'geokit-rails3'
-
 class SearchesController < ApplicationController
   # GET /searches
   # GET /searches.json
-  def index
-    @searches = Search.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @searches }
-    end
-  end
+  #   def index
+  #     respond_to do |format|
+  #       format.html # index.html.erb
+  #       format.json { render json: @searches }
+  #     end
+  #   end
 
   # GET /searches/1
   # GET /searches/1.json
@@ -27,7 +23,7 @@ class SearchesController < ApplicationController
   # GET /searches/new.json
   def new
     @search = Search.new
-
+    @location = request.location.city
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @search }
@@ -81,5 +77,13 @@ class SearchesController < ApplicationController
       format.html { redirect_to searches_url }
       format.json { head :no_content }
     end
+  end
+  
+  private
+  
+  def find_location
+    @client_ip = request.remote_ip
+    location = IpGeocoder.geocode(@client_ip)
+    return location  
   end
 end
