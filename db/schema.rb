@@ -11,12 +11,36 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120310201651) do
+ActiveRecord::Schema.define(:version => 20120310204442) do
+
+  create_table "restaurants", :force => true do |t|
+    t.string   "name"
+    t.integer  "rating"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "searches", :force => true do |t|
     t.string   "query"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "email"
+    t.boolean  "voted"
+    t.integer  "war_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "wars", :force => true do |t|
+    t.integer  "restaurant_1_id"
+    t.integer  "restaurant_2_id"
+    t.integer  "votes_for_1"
+    t.integer  "votes_for_2"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
 end

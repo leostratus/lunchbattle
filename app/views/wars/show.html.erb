@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Restaurant 1:</b>
+  <%= @war.restaurant_1_id %>
+</p>
+
+<p>
+  <b>Restaurant 2:</b>
+  <%= @war.restaurant_2_id %>
+</p>
+
+<p>
+  <b>Votes for 1:</b>
+  <%= @war.votes_for_1 %>
+</p>
+
+<p>
+  <b>Votes for 2:</b>
+  <%= @war.votes_for_2 %>
+</p>
+
+
+<%= link_to 'Edit', edit_war_path(@war) %> |
+<%= link_to 'Back', wars_path %>

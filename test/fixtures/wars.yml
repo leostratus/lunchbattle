@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  restaurant_1_id: 1
+  restaurant_2_id: 1
+  votes_for_1: 1
+  votes_for_2: 1
+
+two:
+  restaurant_1_id: 1
+  restaurant_2_id: 1
+  votes_for_1: 1
+  votes_for_2: 1

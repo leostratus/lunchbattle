@@ -1,0 +1,29 @@
+<h1>Listing wars</h1>
+
+<table>
+  <tr>
+    <th>Restaurant 1</th>
+    <th>Restaurant 2</th>
+    <th>Votes for 1</th>
+    <th>Votes for 2</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @wars.each do |war| %>
+  <tr>
+    <td><%= war.restaurant_1_id %></td>
+    <td><%= war.restaurant_2_id %></td>
+    <td><%= war.votes_for_1 %></td>
+    <td><%= war.votes_for_2 %></td>
+    <td><%= link_to 'Show', war %></td>
+    <td><%= link_to 'Edit', edit_war_path(war) %></td>
+    <td><%= link_to 'Destroy', war, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New War', new_war_path %>

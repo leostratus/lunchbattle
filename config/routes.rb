@@ -1,4 +1,6 @@
 Foodfight::Application.routes.draw do
+  resources :wars
+
   resources :searches
 
   # The priority is based upon order of creation:
