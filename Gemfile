@@ -6,7 +6,7 @@ gem 'rails', '3.2.0'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem "geocoder"
-gem "yelp"
+gem "jonnii-yelp"
 # gem "yelpster"
 # gem "devise"
 

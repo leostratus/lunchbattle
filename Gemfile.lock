@@ -49,6 +49,8 @@ GEM
       term-ansicolor (~> 1.0.5)
     hike (1.2.1)
     i18n (0.6.0)
+    jonnii-yelp (0.1.1)
+      json (>= 1.1.1)
     journey (1.0.3)
     jquery-rails (2.0.1)
       railties (>= 3.2.0, < 5.0)
@@ -62,7 +64,6 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.1.0)
-    oauth (0.4.5)
     pg (0.13.2)
     polyglot (0.3.3)
     rack (1.4.1)
@@ -113,9 +114,6 @@ GEM
     uglifier (1.2.3)
       execjs (>= 0.3.0)
       multi_json (>= 1.0.2)
-    yelpster (1.1.1)
-      json (>= 1.1.1)
-      oauth (>= 0.4.5)
 
 PLATFORMS
   ruby
@@ -124,10 +122,10 @@ DEPENDENCIES
   coffee-rails (~> 3.2.1)
   geocoder
   heroku
+  jonnii-yelp
   jquery-rails
   pg
   rails (= 3.2.0)
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
-  yelpster
