@@ -43,6 +43,9 @@ GEM
       multi_json (~> 1.0)
     geokit (1.6.5)
       multi_json
+    geokit-rails3 (0.1.5)
+      geokit (~> 1.5)
+      rails (~> 3.0)
     heroku (2.21.2)
       launchy (>= 0.3.2)
       rest-client (~> 1.6.1)
@@ -123,7 +126,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
-  geokit (~> 1.6.5)
+  geokit-rails3
   heroku
   jquery-rails
   pg
@@ -131,4 +134,4 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   uglifier (>= 1.0.3)
-  yelpster (~> 1.1.1)
+  yelpster

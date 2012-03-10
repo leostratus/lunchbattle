@@ -1,3 +1,5 @@
+require 'geokit-rails3'
+
 class SearchesController < ApplicationController
   # GET /searches
   # GET /searches.json
