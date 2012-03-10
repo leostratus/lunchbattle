@@ -52,6 +52,34 @@ class FightsController < ApplicationController
       end
     end
   end
+  
+  def vote_for_1
+    @fight = Fight.find(params[:id])
+    
+    respond_to do |format|
+      if @fight.vote_for_1
+        format.html { redirect_to @fight, notice: 'Voted for 1 successfully.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "show" }
+        format.json { render json: @fight.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+  
+  def vote_for_2
+    @fight = Fight.find(params[:id])
+    
+    respond_to do |format|
+      if @fight.vote_for_2
+        format.html { redirect_to @fight, notice: 'Voted for 1 successfully.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: "show" }
+        format.json { render json: @fight.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   # PUT /fights/1
   # PUT /fights/1.json

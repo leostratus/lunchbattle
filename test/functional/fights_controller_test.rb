@@ -2,48 +2,29 @@ require 'test_helper'
 
 class FightsControllerTest < ActionController::TestCase
   setup do
-    @war = wars(:one)
+    @fight = fights(:one)
   end
 
-  test "should get index" do
-    get :index
-    assert_response :success
-    assert_not_nil assigns(:wars)
-  end
-
-  test "should get new" do
-    get :new
-    assert_response :success
-  end
-
-  test "should create war" do
-    assert_difference('War.count') do
-      post :create, war: @war.attributes
+  test "should create fight" do
+    assert_difference('Fight.count') do
+      post :create, fight: @fight.attributes
     end
 
-    assert_redirected_to war_path(assigns(:war))
+    assert_redirected_to fight_path(assigns(:fight))
   end
 
-  test "should show war" do
-    get :show, id: @war
+  test "should show fight" do
+    get :show, id: @fight
     assert_response :success
   end
-
-  test "should get edit" do
-    get :edit, id: @war
+  
+  test "should vote for 1" do
+    put :vote_for_1, id: @fight
     assert_response :success
   end
-
-  test "should update war" do
-    put :update, id: @war, war: @war.attributes
-    assert_redirected_to war_path(assigns(:war))
-  end
-
-  test "should destroy war" do
-    assert_difference('War.count', -1) do
-      delete :destroy, id: @war
-    end
-
-    assert_redirected_to wars_path
+  
+  test "should vote for 2" do
+    put :vote_for_2, id: @fight
+    assert_response :success
   end
 end

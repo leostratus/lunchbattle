@@ -1,5 +1,11 @@
 Foodfight::Application.routes.draw do
-  resources :fights, :only => [:show, :create]
+  resources :fights, :only => [:show, :create] do
+    member do
+      put 'vote_for_1'
+      put 'vote_for_2'
+    end
+  end
+  
   resources :searches
 
   # The priority is based upon order of creation:

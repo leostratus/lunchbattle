@@ -12,10 +12,10 @@
 
 <p>
   <b>Votes for 1:</b>
-  <%= @fight.votes_for_1 %>
+  <%= @fight.votes_for_1 %> (<%= link_to 'Vote', vote_for_1_fight_path(@fight), method: :put %>)
 </p>
 
 <p>
   <b>Votes for 2:</b>
-  <%= @fight.votes_for_2 %>
+  <%= @fight.votes_for_2 %> (<%= link_to 'Vote', vote_for_2_fight_path(@fight), method: :put %>)
 </p>
