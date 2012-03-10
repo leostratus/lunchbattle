@@ -3,9 +3,9 @@
 one:
   email: MyString
   voted: false
-  war_id: 1
+  fight_id: 1
 
 two:
   email: MyString
   voted: false
-  war_id: 1
+  fight_id: 1

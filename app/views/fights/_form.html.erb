@@ -1,10 +1,10 @@
-<%= form_for(@war) do |f| %>
-  <% if @war.errors.any? %>
+<%= form_for(@fight) do |f| %>
+  <% if @fight.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@war.errors.count, "error") %> prohibited this war from being saved:</h2>
+      <h2><%= pluralize(@fight.errors.count, "error") %> prohibited this fight from being saved:</h2>
 
       <ul>
-      <% @war.errors.full_messages.each do |msg| %>
+      <% @fight.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

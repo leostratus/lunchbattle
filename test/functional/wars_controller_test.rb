@@ -1,14 +1,14 @@
 require 'test_helper'
 
-class WarsControllerTest < ActionController::TestCase
+class FightsControllerTest < ActionController::TestCase
   setup do
-    @war = wars(:one)
+    @fight = fights(:one)
   end
 
   test "should get index" do
     get :index
     assert_response :success
-    assert_not_nil assigns(:wars)
+    assert_not_nil assigns(:fights)
   end
 
   test "should get new" do
@@ -16,34 +16,34 @@ class WarsControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should create war" do
-    assert_difference('War.count') do
-      post :create, war: @war.attributes
+  test "should create fight" do
+    assert_difference('Fight.count') do
+      post :create, fight: @fight.attributes
     end
 
-    assert_redirected_to war_path(assigns(:war))
+    assert_redirected_to fight_path(assigns(:fight))
   end
 
-  test "should show war" do
-    get :show, id: @war
+  test "should show fight" do
+    get :show, id: @fight
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @war
+    get :edit, id: @fight
     assert_response :success
   end
 
-  test "should update war" do
-    put :update, id: @war, war: @war.attributes
-    assert_redirected_to war_path(assigns(:war))
+  test "should update fight" do
+    put :update, id: @fight, fight: @fight.attributes
+    assert_redirected_to fight_path(assigns(:fight))
   end
 
-  test "should destroy war" do
-    assert_difference('War.count', -1) do
-      delete :destroy, id: @war
+  test "should destroy fight" do
+    assert_difference('Fight.count', -1) do
+      delete :destroy, id: @fight
     end
 
-    assert_redirected_to wars_path
+    assert_redirected_to fights_path
   end
 end
