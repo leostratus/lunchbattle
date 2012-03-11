@@ -42,7 +42,6 @@ class SearchesController < ApplicationController
     
     respond_to do |format|
       if @search.search && @search.save
-        @search.create_restaurants!
         format.html { redirect_to @search, notice: 'Search was successfully created.' }
         format.json { render json: @search, status: :created, location: @search }
       else
