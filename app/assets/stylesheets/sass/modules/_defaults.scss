@@ -47,6 +47,13 @@ h1, h2, h3, h4, h5 	{
 	font-weight: normal;
 }
 
+* 	{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
 body 	{
 	background: #333 url(../../assets/bg-page.png) top center repeat-x;
 
@@ -72,6 +79,7 @@ input[type=text], input[type=password], input[type=email] 	{
 	@include box-sizing(border-box);
 	padding: 7px 10px;
 
+	-webkit-appearance: none;
 	@include border-radius(8px);
 	background: $accent;
 	border: $border;

@@ -74,17 +74,25 @@ h1, h2, h3, h4, h5 {
 }
 
 /* line 50, sass/modules/_defaults.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* line 57, sass/modules/_defaults.scss */
 body {
   background: #333333 url(../../assets/bg-page.png) top center repeat-x;
   font-family: "Arial", sans-serif;
 }
 
-/* line 56, sass/modules/_defaults.scss */
+/* line 63, sass/modules/_defaults.scss */
 a {
   text-decoration: none;
 }
 
-/* line 60, sass/modules/_defaults.scss */
+/* line 67, sass/modules/_defaults.scss */
 input[type=text], input[type=password], input[type=email] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -102,13 +110,14 @@ input[type=text], input[type=password], input[type=email] {
   font-size: 14px;
 }
 
-/* line 71, sass/modules/_defaults.scss */
+/* line 78, sass/modules/_defaults.scss */
 .button, button, input[type=submit] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box;
   padding: 7px 10px;
+  -webkit-appearance: none;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   -o-border-radius: 8px;
@@ -124,13 +133,13 @@ input[type=text], input[type=password], input[type=email] {
   color: #FFF;
 }
 
-/* line 83, sass/modules/_defaults.scss */
+/* line 91, sass/modules/_defaults.scss */
 .container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* line 89, sass/modules/_defaults.scss */
+/* line 97, sass/modules/_defaults.scss */
 .panel {
   position: relative;
   display: block;
@@ -140,7 +149,7 @@ input[type=text], input[type=password], input[type=email] {
   margin: 10px;
 }
 
-/* line 94, sass/modules/_defaults.scss */
+/* line 102, sass/modules/_defaults.scss */
 .narrate {
   position: absolute;
   display: block;
@@ -153,32 +162,32 @@ input[type=text], input[type=password], input[type=email] {
   text-transform: uppercase;
   max-width: 90%;
 }
-/* line 98, sass/modules/_defaults.scss */
+/* line 106, sass/modules/_defaults.scss */
 .narrate.top {
   top: -10px;
 }
-/* line 101, sass/modules/_defaults.scss */
+/* line 109, sass/modules/_defaults.scss */
 .narrate.bottom {
   bottom: -10px;
 }
-/* line 104, sass/modules/_defaults.scss */
+/* line 112, sass/modules/_defaults.scss */
 .narrate.right {
   right: -10px;
 }
-/* line 107, sass/modules/_defaults.scss */
+/* line 115, sass/modules/_defaults.scss */
 .narrate.left {
   left: -10px;
 }
-/* line 110, sass/modules/_defaults.scss */
+/* line 118, sass/modules/_defaults.scss */
 .narrate strong {
   color: #dd0000;
 }
-/* line 113, sass/modules/_defaults.scss */
+/* line 121, sass/modules/_defaults.scss */
 .narrate.emphasis {
   background: #dd0000;
   color: #FFF;
 }
-/* line 117, sass/modules/_defaults.scss */
+/* line 125, sass/modules/_defaults.scss */
 .narrate.dark {
   background: #000;
   color: #dd0000;
@@ -231,13 +240,7 @@ input[type=text], input[type=password], input[type=email] {
   height: 200px;
   background: #dddddd url(../../assets/city.jpg) center center no-repeat;
 }
-@media screen and (max-device-width: 320px) {
-  /* line 21, sass/pages/_home.scss */
-  .home #intro {
-    height: 130px;
-  }
-}
-/* line 26, sass/pages/_home.scss */
+/* line 20, sass/pages/_home.scss */
 .home .step {
   position: relative;
   display: block;
@@ -247,17 +250,17 @@ input[type=text], input[type=password], input[type=email] {
   padding: 35px 20px 15px;
   text-align: center;
 }
-/* line 32, sass/pages/_home.scss */
+/* line 26, sass/pages/_home.scss */
 .home .step h3 {
   margin: 0;
   font-size: 18px;
 }
-/* line 42, sass/pages/_home.scss */
+/* line 36, sass/pages/_home.scss */
 .home .step input[type=text], .home .step input[type=email] {
   width: 100%;
   margin: 0 0 10px;
 }
-/* line 46, sass/pages/_home.scss */
+/* line 40, sass/pages/_home.scss */
 .home .step a.button {
   display: block;
   width: 60%;
@@ -265,7 +268,21 @@ input[type=text], input[type=password], input[type=email] {
   margin: 0 auto;
   font-size: 18px;
 }
-/* line 56, sass/pages/_home.scss */
+/* line 48, sass/pages/_home.scss */
+.home .step .field {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+/* line 53, sass/pages/_home.scss */
+.home .step .field:last-child {
+  padding-left: 15px;
+}
+/* line 57, sass/pages/_home.scss */
+.home .step .actions {
+  clear: both;
+}
+/* line 62, sass/pages/_home.scss */
 .home #step1 {
   display: inline-block;
   vertical-align: top;
@@ -273,7 +290,17 @@ input[type=text], input[type=password], input[type=email] {
   min-width: 320px;
   max-width: 400px !important;
 }
-/* line 65, sass/pages/_home.scss */
+/* line 71, sass/pages/_home.scss */
 .home #step2, .home #step3 {
   display: none;
+}
+@media screen and (max-device-width: 320px) {
+  /* line 76, sass/pages/_home.scss */
+  .home #intro .panel {
+    height: 130px !important;
+  }
+  /* line 79, sass/pages/_home.scss */
+  .home .step {
+    margin: 10px !important;
+  }
 }

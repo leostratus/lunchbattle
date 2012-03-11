@@ -17,12 +17,6 @@
 		}
 	}
 
-	@media screen and (max-device-width: 320px) {
-		#intro 	{
-			height: 130px;
-		}
-	}
-
 	.step 	{
 		@include panel;
 		margin: 10px 0 0;
@@ -51,6 +45,18 @@
 			margin: 0 auto;
 			font-size: 18px;
 		}
+		.field 	{
+			width: 50%;
+			float: left;
+			text-align: left;
+
+			&:last-child 	{
+				padding-left: 15px;
+			}
+		}
+		.actions 	{
+			clear: both;
+		}
 	}
 
 	#step1 	{
@@ -64,5 +70,14 @@
 
 	#step2, #step3 	{
 		display: none;
+	}
+
+	@media screen and (max-device-width: 320px) {
+		#intro .panel 	{
+			height: 130px !important;
+		}
+		.step 	{
+			margin: 10px !important;
+		}
 	}
 }
