@@ -16,7 +16,15 @@
 			height: 140px;
 		
 			&.panel1 	{
-				background: #DDD url(../images/city.jpg) center center no-repeat;
+				background: #DDD url(../../assets/city.jpg) center center no-repeat;
+			}
+		
+			&.panel2	{
+				background: #DDD url(../../assets/panel2.jpg) center center no-repeat;
+			}
+		
+			&.panel3 	{
+				background: #DDD url(../../assets/panel3.jpg) center center no-repeat;
 			}
 		}
 		.col 	{
