@@ -16,6 +16,7 @@ $landscape: 480px;
 }
 @mixin narrative 	{
 	position: absolute;
+	z-index: 100000;
 	display: block;
 	padding: 5px 8px;
 
