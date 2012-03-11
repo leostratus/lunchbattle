@@ -1,21 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div style="text-align: center"><div id="fight">
 
-<p>
-  <b>Restaurant 1:</b>
-  <%= @fight.restaurant_1_id %>
-</p>
+<%= render :partial => "result", :locals => { :result => @fight.restaurant_1.response } %>
 
-<p>
-  <b>Restaurant 2:</b>
-  <%= @fight.restaurant_2_id %>
-</p>
 
-<p>
-  <b>Votes for 1:</b>
-  <%= @fight.votes_for_1 %> (<%= link_to 'Vote', vote_for_1_fight_path(@fight), method: :put %>)
-</p>
+<div>
+  <b>Votes:</b>
+  <%= @fight.votes_for_1 %> [<%= link_to '+', vote_for_1_fight_path(@fight), method: :put %>]
+</div>
 
-<p>
-  <b>Votes for 2:</b>
-  <%= @fight.votes_for_2 %> (<%= link_to 'Vote', vote_for_2_fight_path(@fight), method: :put %>)
-</p>
+<%= render :partial => "result", :locals => { :result => @fight.restaurant_2.response } %>
+
+
+<div>
+  <b>Votes:</b>
+  <%= @fight.votes_for_2 %> [<%= link_to '+', vote_for_2_fight_path(@fight), method: :put %>]
+</div>
+
+</div></div>

@@ -380,16 +380,73 @@ a.button, button, input[type=submit] {
   width: 49%;
   min-width: 320px;
   max-width: 480px !important;
-  height: 155px;
 }
+
+ul#results{
+  
+  margin: 10px 0;
+  text-align: left;
+}
+
+ul#results li   {
+  margin: 5px 0;
+  padding: 5px;
+  border-top: 1px solid #DDD;
+}
+
+ul#results li span  {
+  padding: 0 3px;
+  display: block;
+}
+
+ul#results li span.restaurant_rating{
+  float: right;
+}
+
+
+#fight {
+width: 300px;
+  color: white;
+  padding-top: 25px;
+}
+
+#fight a {
+  color: white;
+}
+
+#fight div{
+  width: 300px;
+}
+
+#fight .restaurant_x {
+  margin: 15px 0;
+  padding: 5px;
+  border-top: 1px solid #DDD;
+  text-align: left;
+  width: 300px;
+}
+
+#fight .restaurant_x span  {
+  padding: 0 3px;
+  display: block;
+}
+
+#fight .restaurant_x span.restaurant_rating{
+  float: right;
+}
+
 /* line 100, sass/pages/_home.scss */
 .home #step2, .home #step3 {
   display: none;
 }
 @media screen and (max-device-width: 320px) {
   /* line 105, sass/pages/_home.scss */
+  .home #intro   {
+    width: 300px;
+  }
   .home #intro .panel {
     height: 130px !important;
+    width: 100% !important;
   }
   /* line 108, sass/pages/_home.scss */
   .home .step {

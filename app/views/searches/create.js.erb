@@ -1,1 +1,1 @@
-$('.results').replaceWith("<%= escape_javascript(render :partial => "searches/results") %>");
+$('#results').html("<%= escape_javascript(render :partial => "results", :locals => { :results => @search.response}) %>");
