@@ -75,7 +75,7 @@ h1, h2, h3, h4, h5 {
 
 /* line 50, sass/modules/_defaults.scss */
 body {
-  background: #333333 url(../images/bg-page.png) top center repeat-x;
+  background: #333333 url(../../assets/bg-page.png) top center repeat-x;
   font-family: "Arial", sans-serif;
 }
 
@@ -186,7 +186,7 @@ input[type=text], input[type=password], input[type=email] {
 
 /* line 1, sass/modules/_header.scss */
 #header {
-  background: transparent url(../../images/foodsplosion.png) center center no-repeat;
+  background: transparent url(../../assets/foodsplosion.png) center center no-repeat;
   background-size: 500px auto;
   margin: -55px 0 -25px;
 }
@@ -204,6 +204,18 @@ input[type=text], input[type=password], input[type=email] {
   margin: 0 auto;
   width: 272px;
   height: 192px;
+}
+
+/* line 2, sass/modules/_footer.scss */
+#footer ul {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+/* line 6, sass/modules/_footer.scss */
+#footer ul li {
+  display: inline;
+  padding: 0 10px;
 }
 
 /* line 3, sass/pages/_home.scss */
