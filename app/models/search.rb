@@ -26,6 +26,8 @@ class Search < ActiveRecord::Base
     request = Yelp::Review::Request::Location.new(search_params)
     temp_response = @client.search(request)
     
+    puts temp_response.inspect
+    
     if temp_response['message']['text'] == 'OK'
       self.response = temp_response['businesses']
       create_restaurants
