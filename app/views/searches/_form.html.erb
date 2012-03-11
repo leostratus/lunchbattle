@@ -1,10 +1,10 @@
-<%= form_for(@search, :remote => true) do |f| %>
+<%= form_for(@search, :url => searches_path, :method => :post, :remote => true) do |f| %>
   <div class="field search">
     <%= f.text_field :query, :placeholder => "e.g. Coffee" %>
   </div>
   <div class="field category">
     <%= f.label :category %><br />
-    <%= f.select :category, YELP_RESTAURANT_CATEGORIES, :include_blank => true %>
+    <%= f.select :category, YELP_RESTAURANT_CATEGORIES, :include_blank => 'All Categories' %>
   </div>
   <div class="actions">
     <%= f.submit 'Search!' %>
