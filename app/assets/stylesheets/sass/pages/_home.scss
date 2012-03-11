@@ -1,19 +1,27 @@
 .home 	{
 
 	#intro	{
-		display: inline-block;
+		position: relative;
+		display: block;
 		vertical-align: top;
+		margin: 0 0 10px;
 
-		width: 50%;
-		max-width: 480px;
-		min-width: 320px;
+		//width: 50%;
+		//max-width: 480px;
+		//min-width: 320px;
 
 		//background: rgba(0,0,0,0.5);
 
 		.panel 	{
-			height: 155px;
-
-			background: #DDD url(../../assets/city.jpg) center center no-repeat;
+			height: 140px;
+		
+			&.panel1 	{
+				background: #DDD url(../images/city.jpg) center center no-repeat;
+			}
+		}
+		.col 	{
+			width: 31%;
+			margin:  0 5px;
 		}
 	}
 
@@ -98,6 +106,7 @@
 			min-width: 300px !important;
 			width: 300px !important;
 			height: auto;
+			padding-top: 60px;
 
 			.field 	{
 				float: none;
