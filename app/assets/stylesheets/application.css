@@ -1,336 +1,102 @@
-/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
+/*
+Syntax error: Invalid CSS after "			height: auto": expected ";", was ".field 	{"
+        on line 102 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss
+        from line 9 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss
 
-/* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
-  line-height: 1;
-}
-
-/* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-ol, ul {
-  list-style: none;
-}
-
-/* line 24, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-/* line 28, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q, blockquote {
-  quotes: none;
-}
-/* line 101, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-a img {
-  border: none;
-}
-
-/* line 115, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-/* line 44, sass/modules/_defaults.scss */
-h1, h2, h3, h4, h5 {
-  margin: .65em 0;
-  font-family: "Permanent Marker", cursive;
-  font-style: italic;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-/* line 50, sass/modules/_defaults.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 57, sass/modules/_defaults.scss */
-body {
-  background: #333333 url(../../assets/bg-page.png) top center repeat-x;
-  font-family: "Arial", sans-serif;
-}
-
-/* line 63, sass/modules/_defaults.scss */
-a {
-  text-decoration: none;
-}
-
-/* line 67, sass/modules/_defaults.scss */
-input[type=text], input[type=password], input[type=email] {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 10px;
-  background: #FFF;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-  border: 3px solid black;
-  font-size: 14px;
-}
-
-/* line 78, sass/modules/_defaults.scss */
-a.button, button, input[type=submit] {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 7px 10px;
-  -webkit-appearance: none;
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
-  -o-border-radius: 8px;
-  -ms-border-radius: 8px;
-  -khtml-border-radius: 8px;
-  border-radius: 8px;
-  background: #dd0000;
-  border: 3px solid black;
-  font-family: "Walter Turncoat", cursive;
-  font-size: 15px;
-  font-style: italic;
-  text-transform: uppercase;
-  color: #FFF;
-}
-
-/* line 91, sass/modules/_defaults.scss */
-.container {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* line 97, sass/modules/_defaults.scss */
-.panel {
-  position: relative;
-  display: block;
-  background: #FFF;
-  border: 3px solid black;
-  min-height: 100px;
-  margin: 10px;
-}
-
-/* line 102, sass/modules/_defaults.scss */
-.narrate {
-  position: absolute;
-  display: block;
-  padding: 5px 8px;
-  background: #FFF;
-  border: 3px solid black;
-  font-family: "Walter Turncoat", cursive;
-  font-size: 14px;
-  font-style: italic;
-  text-transform: uppercase;
-  max-width: 90%;
-}
-/* line 106, sass/modules/_defaults.scss */
-.narrate.top {
-  top: -10px;
-}
-/* line 109, sass/modules/_defaults.scss */
-.narrate.bottom {
-  bottom: -10px;
-}
-/* line 112, sass/modules/_defaults.scss */
-.narrate.right {
-  right: -10px;
-}
-/* line 115, sass/modules/_defaults.scss */
-.narrate.left {
-  left: -10px;
-}
-/* line 118, sass/modules/_defaults.scss */
-.narrate strong {
-  color: #dd0000;
-}
-/* line 121, sass/modules/_defaults.scss */
-.narrate.emphasis {
-  background: #dd0000;
-  color: #FFF;
-}
-/* line 125, sass/modules/_defaults.scss */
-.narrate.dark {
-  background: #000;
-  color: #dd0000;
-}
-
-/* line 1, sass/modules/_header.scss */
-#header {
-  background: transparent url(../../assets/foodsplosion.png) center center no-repeat;
-  background-size: 700px auto;
-  margin: -55px 0 -25px;
-}
-/* line 7, sass/modules/_header.scss */
-#header a img {
-  border: 0;
-}
-/* line 11, sass/modules/_header.scss */
-#header a.logo {
-  display: block;
-}
-/* line 14, sass/modules/_header.scss */
-#header a.logo img {
-  display: block;
-  margin: 0 auto;
-  width: 272px;
-  height: 192px;
-}
-
-/* line 1, sass/modules/_footer.scss */
-#footer {
-  width: 100%;
-  text-align: center;
-}
-/* line 5, sass/modules/_footer.scss */
-#footer a, #footer a:visited {
-  color: #dd0000;
-  font-weight: bold;
-}
-/* line 9, sass/modules/_footer.scss */
-#footer a:hover {
-  color: #F00;
-}
-/* line 12, sass/modules/_footer.scss */
-#footer ul {
-  text-align: center;
-  padding: 10px;
-  margin: 0;
-  font-size: 12px;
-}
-/* line 18, sass/modules/_footer.scss */
-#footer ul li {
-  display: inline;
-  padding: 0 10px;
-}
-
-/* line 3, sass/pages/_home.scss */
-.home #intro {
-  display: inline-block;
-  vertical-align: top;
-  width: 50%;
-  max-width: 480px;
-  min-width: 320px;
-}
-/* line 13, sass/pages/_home.scss */
-.home #intro .panel {
-  height: 155px;
-  background: #dddddd url(../../assets/city.jpg) center center no-repeat;
-}
-/* line 20, sass/pages/_home.scss */
-.home .step {
-  position: relative;
-  display: block;
-  background: #FFF;
-  border: 3px solid black;
-  margin: 10px 0 0;
-  padding: 35px 20px 15px;
-  text-align: center;
-}
-/* line 26, sass/pages/_home.scss */
-.home .step h3 {
-  margin: 0;
-  font-size: 18px;
-  text-align: left;
-}
-/* line 37, sass/pages/_home.scss */
-.home .step input[type=text], .home .step input[type=email] {
-  width: 100%;
-  margin: 0 0 10px;
-}
-/* line 41, sass/pages/_home.scss */
-.home .step a.button {
-  display: block;
-  width: 60%;
-  max-width: 150px;
-  margin: 0 auto;
-  font-size: 18px;
-}
-/* line 50, sass/pages/_home.scss */
-.home .step form div.field {
-  width: 50%;
-  float: left;
-  text-align: left;
-}
-/* line 55, sass/pages/_home.scss */
-.home .step form div.field.category {
-  padding-left: 15px;
-  font-size: 12px;
-  font-weight: bold;
-}
-/* line 61, sass/pages/_home.scss */
-.home .step form div.field.category select {
-  margin: 5px 0;
-  font-size: 14px;
-}
-/* line 68, sass/pages/_home.scss */
-.home .step .actions {
-  clear: both;
-}
-/* line 73, sass/pages/_home.scss */
-.home #step1 {
-  display: inline-block;
-  vertical-align: top;
-  width: 49%;
-  min-width: 320px;
-  max-width: 480px !important;
-  height: 155px;
-}
-/* line 84, sass/pages/_home.scss */
-.home #step2, .home #step3 {
-  display: none;
-}
-@media screen and (max-device-width: 320px) {
-  /* line 89, sass/pages/_home.scss */
-  .home #intro .panel {
-    height: 130px !important;
-  }
-  /* line 92, sass/pages/_home.scss */
-  .home .step {
-    width: 320px !important;
-    margin: 10px !important;
-    padding: 35px 10px 10px;
-  }
-  /* line 97, sass/pages/_home.scss */
-  .home #step1 {
-    width: 260px !important;
-  }
-}
+Backtrace:
+/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss:102
+/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss:9
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:898:in `expected'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:841:in `expected'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:836:in `tok!'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:412:in `block in declaration_or_ruleset'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:872:in `call'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:872:in `rethrow'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:418:in `declaration_or_ruleset'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:380:in `block_child'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:372:in `block_contents'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:361:in `block'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:355:in `ruleset'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:417:in `block in declaration_or_ruleset'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:872:in `call'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:872:in `rethrow'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:418:in `declaration_or_ruleset'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:380:in `block_child'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:372:in `block_contents'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:361:in `block'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:275:in `media_directive'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:130:in `special_directive'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:109:in `directive'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:380:in `block_child'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:372:in `block_contents'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:361:in `block'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:355:in `ruleset'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:379:in `block_child'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:369:in `block_contents'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:57:in `stylesheet'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/scss/parser.rb:26:in `parse'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:319:in `_to_tree'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:249:in `block in to_tree'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:249:in `to_tree'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:144:in `visit_import'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/root_node.rb:20:in `render'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:291:in `_render'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:239:in `block in render'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:239:in `render'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:136:in `block (2 levels) in compile'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:122:in `timed'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:135:in `block in compile'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/logger.rb:45:in `red'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:134:in `compile'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:114:in `compile_if_required'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:99:in `block (2 levels) in run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:97:in `each'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:97:in `block in run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:122:in `timed'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:96:in `run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/watch_project.rb:142:in `recompile'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/watch_project.rb:86:in `perform'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/base.rb:18:in `execute'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/bin/compass:25:in `block in <top (required)>'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/bin/compass:39:in `call'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/bin/compass:39:in `<top (required)>'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/bin/compass:19:in `load'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/bin/compass:19:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"			height: auto\": expected \";\", was \".field 	{\"\A         on line 102 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/_home.scss\A         from line 9 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss"; }
