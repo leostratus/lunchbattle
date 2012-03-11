@@ -41,7 +41,7 @@ $landscape: 480px;
 	text-transform: uppercase;
 }
 
-@mixin box-sizing 	{
+@mixin boxsizing 	{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-ms-box-sizing: border-box;
@@ -114,7 +114,7 @@ a.button, button, input[type=submit] 	{
 	@include pie-clearfix;
 
 	.col 	{
-		@include box-sizing;
+		@include boxsizing;
 		width: 49%;
 		float: left;
 
@@ -129,7 +129,7 @@ a.button, button, input[type=submit] 	{
 	text-align: center;
 
 	.col 	{
-		@include box-sizing;
+		@include boxsizing;
 		display: inline-block;
 		vertical-align: top;
 		width: 30%;

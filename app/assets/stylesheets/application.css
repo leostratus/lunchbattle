@@ -1,86 +1,410 @@
-/*
-Syntax error: Mixin box-sizing takes 0 arguments but 1 was passed.
-        on line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss, in `box-sizing'
-        from line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss
-        from line 5 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss
+/* line 17, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss:83:in `box-sizing'
-/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss:83
-/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss:5
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:174:in `visit_mixin'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:145:in `block in visit_import'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:145:in `map'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:145:in `visit_import'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:47:in `visit_root'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/root_node.rb:20:in `render'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:291:in `_render'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:239:in `block in render'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/util.rb:297:in `silence_sass_warnings'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/engine.rb:239:in `render'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:136:in `block (2 levels) in compile'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:122:in `timed'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:135:in `block in compile'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/logger.rb:45:in `red'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:134:in `compile'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:114:in `compile_if_required'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:99:in `block (2 levels) in run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:97:in `each'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:97:in `block in run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:122:in `timed'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/compiler.rb:96:in `run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/watch_project.rb:142:in `recompile'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `loop'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:15:in `run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/monitor.rb:26:in `run'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm.rb:20:in `monitor'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/watch_project.rb:86:in `perform'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/base.rb:18:in `execute'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/bin/compass:25:in `block in <top (required)>'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/bin/compass:39:in `call'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/bin/compass:39:in `<top (required)>'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/bin/compass:19:in `load'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/bin/compass:19:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Mixin box-sizing takes 0 arguments but 1 was passed.\A         on line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss, in `box-sizing'\A         from line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss\A         from line 5 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss"; }
+/* line 20, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 115, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+@media screen and (max-device-width: 320px) {
+  /* line 54, sass/modules/_defaults.scss */
+  .nomobile {
+    display: none !important;
+  }
+}
+/* line 59, sass/modules/_defaults.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* line 66, sass/modules/_defaults.scss */
+body {
+  background: #333333 url(../../assets/bg-page.png) top center repeat-x;
+  font-family: "Arial", sans-serif;
+}
+
+/* line 72, sass/modules/_defaults.scss */
+h1, h2, h3, h4, h5 {
+  margin: .65em 0;
+  font-family: "Permanent Marker", cursive;
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+/* line 78, sass/modules/_defaults.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 82, sass/modules/_defaults.scss */
+input[type=text], input[type=password], input[type=email] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  background: #FFF;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  border: 3px solid black;
+  font-size: 14px;
+}
+
+/* line 93, sass/modules/_defaults.scss */
+a.button, button, input[type=submit] {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 7px 10px;
+  -webkit-appearance: none;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -o-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -khtml-border-radius: 8px;
+  border-radius: 8px;
+  background: #dd0000;
+  border: 3px solid black;
+  font-family: "Walter Turncoat", cursive;
+  font-size: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #FFF;
+}
+
+/* line 106, sass/modules/_defaults.scss */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* line 113, sass/modules/_defaults.scss */
+.grid_2 {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.grid_2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 116, sass/modules/_defaults.scss */
+.grid_2 .col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 49%;
+  float: left;
+}
+/* line 121, sass/modules/_defaults.scss */
+.grid_2 .col:last-child {
+  float: right;
+}
+
+/* line 127, sass/modules/_defaults.scss */
+.grid_3 {
+  *zoom: 1;
+  text-align: center;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.grid_3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 131, sass/modules/_defaults.scss */
+.grid_3 .col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+/* line 140, sass/modules/_defaults.scss */
+.panel {
+  position: relative;
+  display: block;
+  background: #FFF;
+  border: 3px solid black;
+  min-height: 100px;
+  margin: 10px;
+}
+
+/* line 145, sass/modules/_defaults.scss */
+.narrate {
+  position: absolute;
+  display: block;
+  padding: 5px 8px;
+  background: #FFF;
+  border: 3px solid black;
+  font-family: "Walter Turncoat", cursive;
+  font-size: 14px;
+  font-style: italic;
+  text-transform: uppercase;
+  max-width: 90%;
+}
+/* line 149, sass/modules/_defaults.scss */
+.narrate.top {
+  top: -10px;
+}
+/* line 152, sass/modules/_defaults.scss */
+.narrate.bottom {
+  bottom: -10px;
+}
+/* line 155, sass/modules/_defaults.scss */
+.narrate.right {
+  right: -10px;
+}
+/* line 158, sass/modules/_defaults.scss */
+.narrate.left {
+  left: -10px;
+}
+/* line 161, sass/modules/_defaults.scss */
+.narrate strong {
+  color: #dd0000;
+}
+/* line 164, sass/modules/_defaults.scss */
+.narrate.emphasis {
+  background: #dd0000;
+  color: #FFF;
+}
+/* line 168, sass/modules/_defaults.scss */
+.narrate.dark {
+  background: #000;
+  color: #dd0000;
+}
+
+/* line 1, sass/modules/_header.scss */
+#header {
+  background: transparent url(../../assets/foodsplosion.png) center center no-repeat;
+  background-size: 700px auto;
+  margin: -55px 0 -25px;
+}
+/* line 7, sass/modules/_header.scss */
+#header a img {
+  border: 0;
+}
+/* line 11, sass/modules/_header.scss */
+#header a.logo {
+  display: block;
+}
+/* line 14, sass/modules/_header.scss */
+#header a.logo img {
+  display: block;
+  margin: 0 auto;
+  width: 272px;
+  height: 192px;
+}
+
+/* line 1, sass/modules/_footer.scss */
+#footer {
+  width: 100%;
+  text-align: center;
+}
+/* line 5, sass/modules/_footer.scss */
+#footer a, #footer a:visited {
+  color: #dd0000;
+  font-weight: bold;
+}
+/* line 9, sass/modules/_footer.scss */
+#footer a:hover {
+  color: #F00;
+}
+/* line 12, sass/modules/_footer.scss */
+#footer ul {
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-size: 12px;
+}
+/* line 18, sass/modules/_footer.scss */
+#footer ul li {
+  display: inline;
+  padding: 0 10px;
+}
+
+/* line 3, sass/pages/_home.scss */
+.home #intro {
+  position: relative;
+  display: block;
+  vertical-align: top;
+  margin: 0 0 10px;
+}
+/* line 15, sass/pages/_home.scss */
+.home #intro .panel {
+  height: 140px;
+}
+/* line 18, sass/pages/_home.scss */
+.home #intro .panel.panel1 {
+  background: #dddddd url(../images/city.jpg) center center no-repeat;
+}
+/* line 22, sass/pages/_home.scss */
+.home #intro .col {
+  width: 31%;
+  margin: 0 5px;
+}
+/* line 28, sass/pages/_home.scss */
+.home .step {
+  position: relative;
+  display: block;
+  background: #FFF;
+  border: 3px solid black;
+  margin: 10px 0 0;
+  padding: 35px 20px 15px;
+  text-align: center;
+}
+/* line 34, sass/pages/_home.scss */
+.home .step h3 {
+  margin: 0;
+  font-size: 18px;
+  text-align: left;
+}
+/* line 45, sass/pages/_home.scss */
+.home .step input[type=text], .home .step input[type=email] {
+  width: 100%;
+  margin: 0 0 10px;
+}
+/* line 49, sass/pages/_home.scss */
+.home .step a.button {
+  display: block;
+  width: 60%;
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 18px;
+}
+/* line 58, sass/pages/_home.scss */
+.home .step form div.field {
+  width: 50%;
+  float: left;
+  text-align: left;
+}
+/* line 63, sass/pages/_home.scss */
+.home .step form div.field.category {
+  padding-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+/* line 69, sass/pages/_home.scss */
+.home .step form div.field.category select {
+  margin: 5px 0;
+  font-size: 14px;
+}
+/* line 76, sass/pages/_home.scss */
+.home .step .actions {
+  clear: both;
+}
+/* line 81, sass/pages/_home.scss */
+.home #step1 {
+  display: inline-block;
+  vertical-align: top;
+  width: 49%;
+  min-width: 320px;
+  max-width: 480px !important;
+  height: 155px;
+}
+/* line 92, sass/pages/_home.scss */
+.home #step2, .home #step3 {
+  display: none;
+}
+@media screen and (max-device-width: 320px) {
+  /* line 97, sass/pages/_home.scss */
+  .home #intro .panel {
+    height: 130px !important;
+  }
+  /* line 100, sass/pages/_home.scss */
+  .home .step {
+    width: 320px !important;
+    margin: 10px !important;
+    padding: 35px 10px 10px;
+  }
+  /* line 105, sass/pages/_home.scss */
+  .home #step1 {
+    min-width: 300px !important;
+    width: 300px !important;
+    height: auto;
+    padding-top: 60px;
+  }
+  /* line 111, sass/pages/_home.scss */
+  .home #step1 .field {
+    float: none;
+    width: 100%;
+    padding: 0 !important;
+    font-size: 14px;
+  }
+  /* line 117, sass/pages/_home.scss */
+  .home #step1 .field select {
+    width: 100%;
+    font-size: 18px;
+  }
+}
