@@ -75,7 +75,7 @@ input[type=text], input[type=password], input[type=email] 	{
 	font-size: 14px;
 }
 
-.button, button, input[type=submit] 	{
+a.button, button, input[type=submit] 	{
 	@include box-sizing(border-box);
 	padding: 7px 10px;
 

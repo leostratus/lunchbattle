@@ -11,10 +11,10 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <div class="field search">
     <%= f.text_field :query %>
   </div>
-  <div class="field">
+  <div class="field category">
     <%= f.label :category %><br />
     <%= f.select :category, YELP_RESTAURANT_CATEGORIES, :include_blank => true %>
   </div>

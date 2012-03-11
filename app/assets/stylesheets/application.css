@@ -111,7 +111,7 @@ input[type=text], input[type=password], input[type=email] {
 }
 
 /* line 78, sass/modules/_defaults.scss */
-.button, button, input[type=submit] {
+a.button, button, input[type=submit] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -237,7 +237,7 @@ input[type=text], input[type=password], input[type=email] {
 }
 /* line 13, sass/pages/_home.scss */
 .home #intro .panel {
-  height: 200px;
+  height: 155px;
   background: #dddddd url(../../assets/city.jpg) center center no-repeat;
 }
 /* line 20, sass/pages/_home.scss */
@@ -268,39 +268,49 @@ input[type=text], input[type=password], input[type=email] {
   margin: 0 auto;
   font-size: 18px;
 }
-/* line 48, sass/pages/_home.scss */
-.home .step .field {
+/* line 49, sass/pages/_home.scss */
+.home .step form div.field {
   width: 50%;
   float: left;
   text-align: left;
 }
-/* line 53, sass/pages/_home.scss */
-.home .step .field:last-child {
+/* line 54, sass/pages/_home.scss */
+.home .step form div.field.category {
   padding-left: 15px;
+  font-size: 12px;
+  font-weight: bold;
 }
-/* line 57, sass/pages/_home.scss */
+/* line 60, sass/pages/_home.scss */
+.home .step form div.field.category select {
+  margin: 5px 0;
+  font-size: 14px;
+}
+/* line 67, sass/pages/_home.scss */
 .home .step .actions {
   clear: both;
 }
-/* line 62, sass/pages/_home.scss */
+/* line 72, sass/pages/_home.scss */
 .home #step1 {
   display: inline-block;
   vertical-align: top;
   width: 49%;
   min-width: 320px;
-  max-width: 400px !important;
+  max-width: 480px !important;
+  height: 155px;
 }
-/* line 71, sass/pages/_home.scss */
+/* line 83, sass/pages/_home.scss */
 .home #step2, .home #step3 {
   display: none;
 }
 @media screen and (max-device-width: 320px) {
-  /* line 76, sass/pages/_home.scss */
+  /* line 88, sass/pages/_home.scss */
   .home #intro .panel {
     height: 130px !important;
   }
-  /* line 79, sass/pages/_home.scss */
+  /* line 91, sass/pages/_home.scss */
   .home .step {
+    width: 320px !important;
     margin: 10px !important;
+    padding: 35px 10px 10px;
   }
 }
