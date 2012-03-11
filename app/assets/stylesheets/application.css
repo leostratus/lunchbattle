@@ -1,27 +1,14 @@
 /*
-Syntax error: Mixin box-sizing is missing parameter $bs.
-        on line 110 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss, in `box-sizing'
-        from line 110 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss
+Syntax error: Mixin box-sizing takes 0 arguments but 1 was passed.
+        on line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss, in `box-sizing'
+        from line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss
         from line 5 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss
 
 Backtrace:
-/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss:110:in `box-sizing'
-/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss:110
+/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss:83:in `box-sizing'
+/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss:83
 /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss:5
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:196:in `block in visit_mixin'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:186:in `each'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:186:in `inject'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:186:in `visit_mixin'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:27:in `block in visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:39:in `with_environment'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:26:in `visit_children'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:230:in `visit_rule'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:174:in `visit_mixin'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -96,4 +83,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Mixin box-sizing is missing parameter $bs.\A         on line 110 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss, in `box-sizing'\A         from line 110 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss\A         from line 5 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss"; }
+  content: "Syntax error: Mixin box-sizing takes 0 arguments but 1 was passed.\A         on line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss, in `box-sizing'\A         from line 83 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/modules/_defaults.scss\A         from line 5 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/application.scss"; }

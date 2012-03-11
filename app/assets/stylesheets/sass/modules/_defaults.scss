@@ -41,6 +41,13 @@ $landscape: 480px;
 	text-transform: uppercase;
 }
 
+@mixin box-sizing 	{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
 // HIDE
 
 @media screen and (max-device-width: 320px) 	{
