@@ -64,7 +64,27 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-/* line 44, sass/modules/_defaults.scss */
+@media screen and (max-device-width: 320px) {
+  /* line 54, sass/modules/_defaults.scss */
+  .nomobile {
+    display: none !important;
+  }
+}
+/* line 59, sass/modules/_defaults.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+
+/* line 66, sass/modules/_defaults.scss */
+body {
+  background: #333333 url(../../assets/bg-page.png) top center repeat-x;
+  font-family: "Arial", sans-serif;
+}
+
+/* line 72, sass/modules/_defaults.scss */
 h1, h2, h3, h4, h5 {
   margin: .65em 0;
   font-family: "Permanent Marker", cursive;
@@ -73,26 +93,12 @@ h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
 
-/* line 50, sass/modules/_defaults.scss */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  -o-box-sizing: border-box;
-}
-
-/* line 57, sass/modules/_defaults.scss */
-body {
-  background: #333333 url(../../assets/bg-page.png) top center repeat-x;
-  font-family: "Arial", sans-serif;
-}
-
-/* line 63, sass/modules/_defaults.scss */
+/* line 78, sass/modules/_defaults.scss */
 a {
   text-decoration: none;
 }
 
-/* line 67, sass/modules/_defaults.scss */
+/* line 82, sass/modules/_defaults.scss */
 input[type=text], input[type=password], input[type=email] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -110,7 +116,7 @@ input[type=text], input[type=password], input[type=email] {
   font-size: 14px;
 }
 
-/* line 78, sass/modules/_defaults.scss */
+/* line 93, sass/modules/_defaults.scss */
 a.button, button, input[type=submit] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -133,13 +139,59 @@ a.button, button, input[type=submit] {
   color: #FFF;
 }
 
-/* line 91, sass/modules/_defaults.scss */
+/* line 106, sass/modules/_defaults.scss */
 .container {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* line 97, sass/modules/_defaults.scss */
+/* line 113, sass/modules/_defaults.scss */
+.grid_2 {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.grid_2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 116, sass/modules/_defaults.scss */
+.grid_2 .col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  width: 49%;
+  float: left;
+}
+/* line 121, sass/modules/_defaults.scss */
+.grid_2 .col:last-child {
+  float: right;
+}
+
+/* line 127, sass/modules/_defaults.scss */
+.grid_3 {
+  *zoom: 1;
+  text-align: center;
+}
+/* line 38, ../../../../../../.rvm/gems/ruby-1.9.2-head/gems/compass-0.11.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.grid_3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 131, sass/modules/_defaults.scss */
+.grid_3 .col {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+/* line 140, sass/modules/_defaults.scss */
 .panel {
   position: relative;
   display: block;
@@ -149,7 +201,7 @@ a.button, button, input[type=submit] {
   margin: 10px;
 }
 
-/* line 102, sass/modules/_defaults.scss */
+/* line 145, sass/modules/_defaults.scss */
 .narrate {
   position: absolute;
   display: block;
@@ -162,32 +214,32 @@ a.button, button, input[type=submit] {
   text-transform: uppercase;
   max-width: 90%;
 }
-/* line 106, sass/modules/_defaults.scss */
+/* line 149, sass/modules/_defaults.scss */
 .narrate.top {
   top: -10px;
 }
-/* line 109, sass/modules/_defaults.scss */
+/* line 152, sass/modules/_defaults.scss */
 .narrate.bottom {
   bottom: -10px;
 }
-/* line 112, sass/modules/_defaults.scss */
+/* line 155, sass/modules/_defaults.scss */
 .narrate.right {
   right: -10px;
 }
-/* line 115, sass/modules/_defaults.scss */
+/* line 158, sass/modules/_defaults.scss */
 .narrate.left {
   left: -10px;
 }
-/* line 118, sass/modules/_defaults.scss */
+/* line 161, sass/modules/_defaults.scss */
 .narrate strong {
   color: #dd0000;
 }
-/* line 121, sass/modules/_defaults.scss */
+/* line 164, sass/modules/_defaults.scss */
 .narrate.emphasis {
   background: #dd0000;
   color: #FFF;
 }
-/* line 125, sass/modules/_defaults.scss */
+/* line 168, sass/modules/_defaults.scss */
 .narrate.dark {
   background: #000;
   color: #dd0000;
@@ -244,18 +296,25 @@ a.button, button, input[type=submit] {
 
 /* line 3, sass/pages/_home.scss */
 .home #intro {
-  display: inline-block;
+  position: relative;
+  display: block;
   vertical-align: top;
-  width: 50%;
-  max-width: 480px;
-  min-width: 320px;
+  margin: 0 0 10px;
 }
-/* line 13, sass/pages/_home.scss */
+/* line 15, sass/pages/_home.scss */
 .home #intro .panel {
-  height: 155px;
-  background: #dddddd url(../../assets/city.jpg) center center no-repeat;
+  height: 140px;
 }
-/* line 20, sass/pages/_home.scss */
+/* line 18, sass/pages/_home.scss */
+.home #intro .panel.panel1 {
+  background: #dddddd url(../images/city.jpg) center center no-repeat;
+}
+/* line 22, sass/pages/_home.scss */
+.home #intro .col {
+  width: 31%;
+  margin: 0 5px;
+}
+/* line 28, sass/pages/_home.scss */
 .home .step {
   position: relative;
   display: block;
@@ -265,18 +324,18 @@ a.button, button, input[type=submit] {
   padding: 35px 20px 15px;
   text-align: center;
 }
-/* line 26, sass/pages/_home.scss */
+/* line 34, sass/pages/_home.scss */
 .home .step h3 {
   margin: 0;
   font-size: 18px;
   text-align: left;
 }
-/* line 37, sass/pages/_home.scss */
+/* line 45, sass/pages/_home.scss */
 .home .step input[type=text], .home .step input[type=email] {
   width: 100%;
   margin: 0 0 10px;
 }
-/* line 41, sass/pages/_home.scss */
+/* line 49, sass/pages/_home.scss */
 .home .step a.button {
   display: block;
   width: 60%;
@@ -284,28 +343,28 @@ a.button, button, input[type=submit] {
   margin: 0 auto;
   font-size: 18px;
 }
-/* line 50, sass/pages/_home.scss */
+/* line 58, sass/pages/_home.scss */
 .home .step form div.field {
   width: 50%;
   float: left;
   text-align: left;
 }
-/* line 55, sass/pages/_home.scss */
+/* line 63, sass/pages/_home.scss */
 .home .step form div.field.category {
   padding-left: 15px;
   font-size: 12px;
   font-weight: bold;
 }
-/* line 61, sass/pages/_home.scss */
+/* line 69, sass/pages/_home.scss */
 .home .step form div.field.category select {
   margin: 5px 0;
   font-size: 14px;
 }
-/* line 68, sass/pages/_home.scss */
+/* line 76, sass/pages/_home.scss */
 .home .step .actions {
   clear: both;
 }
-/* line 73, sass/pages/_home.scss */
+/* line 81, sass/pages/_home.scss */
 .home #step1 {
   display: inline-block;
   vertical-align: top;
@@ -314,35 +373,36 @@ a.button, button, input[type=submit] {
   max-width: 480px !important;
   height: 155px;
 }
-/* line 84, sass/pages/_home.scss */
+/* line 92, sass/pages/_home.scss */
 .home #step2, .home #step3 {
   display: none;
 }
 @media screen and (max-device-width: 320px) {
-  /* line 89, sass/pages/_home.scss */
+  /* line 97, sass/pages/_home.scss */
   .home #intro .panel {
     height: 130px !important;
   }
-  /* line 92, sass/pages/_home.scss */
+  /* line 100, sass/pages/_home.scss */
   .home .step {
     width: 320px !important;
     margin: 10px !important;
     padding: 35px 10px 10px;
   }
-  /* line 97, sass/pages/_home.scss */
+  /* line 105, sass/pages/_home.scss */
   .home #step1 {
     min-width: 300px !important;
     width: 300px !important;
     height: auto;
+    padding-top: 60px;
   }
-  /* line 102, sass/pages/_home.scss */
+  /* line 111, sass/pages/_home.scss */
   .home #step1 .field {
     float: none;
     width: 100%;
     padding: 0 !important;
     font-size: 14px;
   }
-  /* line 108, sass/pages/_home.scss */
+  /* line 117, sass/pages/_home.scss */
   .home #step1 .field select {
     width: 100%;
     font-size: 18px;

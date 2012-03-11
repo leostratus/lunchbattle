@@ -41,10 +41,19 @@ $landscape: 480px;
 	text-transform: uppercase;
 }
 
-h1, h2, h3, h4, h5 	{
-	margin: .65em 0;
-	@include comic-text-strong;
-	font-weight: normal;
+@mixin boxsizing 	{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+// HIDE
+
+@media screen and (max-device-width: 320px) 	{
+	.nomobile 	{
+		display: none !important;
+	}
 }
 
 * 	{
@@ -58,6 +67,12 @@ body 	{
 	background: #333 url(../../assets/bg-page.png) top center repeat-x;
 
 	font-family: "Arial", sans-serif;
+}
+
+h1, h2, h3, h4, h5 	{
+	margin: .65em 0;
+	@include comic-text-strong;
+	font-weight: normal;
 }
 
 a 	{
@@ -91,6 +106,34 @@ a.button, button, input[type=submit] 	{
 .container 	{
 	max-width: 900px;
 	margin: 0 auto;
+}
+
+// GRID
+
+.grid_2 	{
+	@include pie-clearfix;
+
+	.col 	{
+		@include boxsizing;
+		width: 49%;
+		float: left;
+
+		&:last-child 	{
+			float: right;
+		}
+	}
+}
+
+.grid_3 	{
+	@include pie-clearfix;
+	text-align: center;
+
+	.col 	{
+		@include boxsizing;
+		display: inline-block;
+		vertical-align: top;
+		width: 30%;
+	}
 }
 
 // COMIC PANEL STYLING
