@@ -14,6 +14,10 @@
   <div class="field">
     <%= f.text_field :query %>
   </div>
+  <div class="field">
+    <%= f.label :category %><br />
+    <%= f.select :category, YELP_RESTAURANT_CATEGORIES, :include_blank => true %>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
