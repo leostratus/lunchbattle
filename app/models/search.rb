@@ -31,7 +31,7 @@ class Search < ActiveRecord::Base
     if temp_response['message']['text'] == 'OK'
       self.response = temp_response['businesses']
       create_restaurants
-      true
+      save
     else
       false
     end
