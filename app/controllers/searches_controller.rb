@@ -33,12 +33,15 @@ class SearchesController < ApplicationController
   # POST /searches
   # POST /searches.json
   def create
-    @search = Search.new(params[:search])
+    params[:search][:query].strip!
+    params[:search][:category].strip!
+    
+    @search = Search.find_or_create_by_query_and_category(params[:search][:query], params[:search][:category])
     
     respond_to do |format|
-      if @search.search && @search.save
-        format.html { redirect_to @search, notice: 'Search was successfully created.' }
-        format.json { render json: @search, status: :created, location: @search }
+      if @search.search
+        # format.html { redirect_to @search, notice: 'Search was successfully created.' }
+        # format.json { render json: @search, status: :created, location: @search }
         format.js
       else
         format.html { render action: "new" }

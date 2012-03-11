@@ -9,6 +9,8 @@ class Search < ActiveRecord::Base
   end
   
   def search
+    return true if response && (Time.now - self.updated_at < 1.day)
+    
     # move this into some sort of async queue
     @client ||= Yelp::Client.new
     
