@@ -196,7 +196,7 @@ a.button, button, input[type=submit] {
 /* line 1, sass/modules/_header.scss */
 #header {
   background: transparent url(../../assets/foodsplosion.png) center center no-repeat;
-  background-size: 500px auto;
+  background-size: 700px auto;
   margin: -55px 0 -25px;
 }
 /* line 7, sass/modules/_header.scss */
