@@ -39,6 +39,22 @@ class SearchesController < ApplicationController
   # POST /searches.json
   def create
     @search = Search.new(params[:search])
+    
+    client = Yelp::Client.new
+    
+    search_params = {
+      :city => 'Vancouver',
+      :state => 'BC',
+      :yws_id => YELP_YWSID
+    }
+    
+    search_params[:term] = params[:search][:query] unless params[:search][:query].blank?
+    search_params[:category] = [params[:search][:category]] unless params[:search][:category].blank?
+    
+    request = Yelp::Review::Request::Location.new(search_params)
+    response = client.search(request)
+    
+    @search.response = response['businesses'] if response['message']['text'] == 'OK'
 
     respond_to do |format|
       if @search.save
