@@ -20,8 +20,9 @@
 
 		<%= render 'form' %>
 		
-		<ul id="results">
-		</ul>
+		<div id="results">
+		  <%= render :partial => "restaurants/restaurant", :collection => @search.response, :as => :restaurant if @search.response %>
+		</div>
 	</div>
 </div>
 

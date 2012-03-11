@@ -382,57 +382,79 @@ a.button, button, input[type=submit] {
   max-width: 480px !important;
 }
 
-ul#results{
-  
+div#fight-wrapper {
+  text-align: center;
+}
+
+div#fight {
+  display: inline-block;
+  vertical-align: top;
+  width: 441px;
+  padding: 35px 20px 15px;
+  background: white;
+  border: 3px solid black;
+  margin: 10px 0;
+}
+
+div#fight div.vote {
+  padding: 10px 0;
+}
+
+div#results {
   margin: 10px 0;
   text-align: left;
 }
 
-ul#results li   {
-  margin: 5px 0;
-  padding: 5px;
-  border-top: 1px solid #DDD;
-}
-
-ul#results li span  {
-  padding: 0 3px;
-  display: block;
-}
-
-ul#results li span.restaurant_rating{
-  float: right;
-}
-
-
-#fight {
-width: 300px;
-  color: white;
-  padding-top: 25px;
-}
-
-#fight a {
-  color: white;
-}
-
-#fight div{
-  width: 300px;
-}
-
-#fight .restaurant_x {
-  margin: 15px 0;
-  padding: 5px;
+div.restaurant {
+  margin: 0;
+  padding: 10px;
   border-top: 1px solid #DDD;
   text-align: left;
-  width: 300px;
+  overflow: hidden;
 }
 
-#fight .restaurant_x span  {
-  padding: 0 3px;
+div.restaurant span {
+  padding: 0;
   display: block;
 }
 
-#fight .restaurant_x span.restaurant_rating{
-  float: right;
+div.restaurant>span {
+  margin-left: 94px;
+}
+
+div.restaurant span.photo {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 84px;
+  height: 84px;
+  overflow: hidden;
+}
+
+div.restaurant span.photo img {
+  border-radius: 5px;
+  width: 84px;
+  height: 84px;
+}
+
+div.restaurant span.rating {
+  clear: left;
+  float: left;
+  margin: 5px 0 0 0;
+  padding: 0;
+}
+
+div.restaurant span.name.mobile {
+  display: none;
+}
+
+div.restaurant span.country, div.restaurant span.state, div.restaurant span.zip {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+div.restaurant span.address {
+  padding: 5px 0;
 }
 
 /* line 100, sass/pages/_home.scss */
@@ -472,5 +494,13 @@ width: 300px;
   .home #step1 .field select {
     width: 100%;
     font-size: 18px;
+  }
+  
+  div.restaurant span.name {
+    display: none;
+  }
+  
+  div.restaurant span.name.mobile {
+    display: block;
   }
 }
