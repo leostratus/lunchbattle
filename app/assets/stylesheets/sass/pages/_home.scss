@@ -5,15 +5,21 @@
 		vertical-align: top;
 
 		width: 50%;
-		max-width: $landscape;
-		min-width: $portrait;
+		max-width: 480px;
+		min-width: 320px;
 
 		//background: rgba(0,0,0,0.5);
 
 		.panel 	{
-			height: 140px;
+			height: 200px;
 
-			background: #DDD url(../images/city.jpg) center center no-repeat;
+			background: #DDD url(../../assets/city.jpg) center center no-repeat;
+		}
+	}
+
+	@media screen and (max-device-width: 320px) {
+		#intro 	{
+			height: 130px;
 		}
 	}
 
@@ -40,7 +46,7 @@
 		a.button	{
 			display: block;
 			width: 60%;
-			max-width: 120px;
+			max-width: 150px;
 
 			margin: 0 auto;
 			font-size: 18px;
@@ -50,13 +56,10 @@
 	#step1 	{
 		display: inline-block;
 		vertical-align: top;
-		width: 49%;
-		//margin: 10px;
-		min-width: 320px;
-		max-height: 150px;
-		//margin: 10px 0;
 
-		//background: rgba(0,0,0,0.5);
+		width: 49%;
+		min-width: 320px;
+		max-width: 400px !important;
 	}
 
 	#step2, #step3 	{

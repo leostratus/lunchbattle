@@ -228,10 +228,16 @@ input[type=text], input[type=password], input[type=email] {
 }
 /* line 13, sass/pages/_home.scss */
 .home #intro .panel {
-  height: 140px;
-  background: #dddddd url(../images/city.jpg) center center no-repeat;
+  height: 200px;
+  background: #dddddd url(../../assets/city.jpg) center center no-repeat;
 }
-/* line 20, sass/pages/_home.scss */
+@media screen and (max-device-width: 320px) {
+  /* line 21, sass/pages/_home.scss */
+  .home #intro {
+    height: 130px;
+  }
+}
+/* line 26, sass/pages/_home.scss */
 .home .step {
   position: relative;
   display: block;
@@ -241,33 +247,33 @@ input[type=text], input[type=password], input[type=email] {
   padding: 35px 20px 15px;
   text-align: center;
 }
-/* line 26, sass/pages/_home.scss */
+/* line 32, sass/pages/_home.scss */
 .home .step h3 {
   margin: 0;
   font-size: 18px;
 }
-/* line 36, sass/pages/_home.scss */
+/* line 42, sass/pages/_home.scss */
 .home .step input[type=text], .home .step input[type=email] {
   width: 100%;
   margin: 0 0 10px;
 }
-/* line 40, sass/pages/_home.scss */
+/* line 46, sass/pages/_home.scss */
 .home .step a.button {
   display: block;
   width: 60%;
-  max-width: 120px;
+  max-width: 150px;
   margin: 0 auto;
   font-size: 18px;
 }
-/* line 50, sass/pages/_home.scss */
+/* line 56, sass/pages/_home.scss */
 .home #step1 {
   display: inline-block;
   vertical-align: top;
   width: 49%;
   min-width: 320px;
-  max-height: 150px;
+  max-width: 400px !important;
 }
-/* line 62, sass/pages/_home.scss */
+/* line 65, sass/pages/_home.scss */
 .home #step2, .home #step3 {
   display: none;
 }

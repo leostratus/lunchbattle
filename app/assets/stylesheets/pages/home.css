@@ -1,12 +1,12 @@
 /*
-Syntax error: Undefined variable: "$landscape".
-        on line 8 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss
+Syntax error: Undefined mixin 'panel'.
+        on line 27 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss, in `panel'
+        from line 27 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss
 
 Backtrace:
-/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss:8
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/script/variable.rb:45:in `_perform'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/script/node.rb:40:in `perform'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:215:in `visit_prop'
+/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss:27:in `panel'
+/Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss:27
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:169:in `visit_mixin'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:37:in `visit'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/perform.rb:18:in `visit'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/sass-3.1.4/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
@@ -60,11 +60,11 @@ Backtrace:
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `call'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:73:in `run_callback'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:55:in `callback_action'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:31:in `create'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:26:in `block in created'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:25:in `each'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:25:in `created'
-/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:17:in `refresh'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/path.rb:35:in `update'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:39:in `block in modified'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `each'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:37:in `modified'
+/Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/state/directory.rb:18:in `refresh'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block (2 levels) in run'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `each'
 /Users/jackygilbertson/.rvm/gems/ruby-1.9.2-head/gems/fssm-0.2.7/lib/fssm/backends/polling.rb:17:in `block in run'
@@ -86,4 +86,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$landscape\".\A         on line 8 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss"; }
+  content: "Syntax error: Undefined mixin 'panel'.\A         on line 27 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss, in `panel'\A         from line 27 of /Users/jackygilbertson/Documents/Repositories/lunchbattle/app/assets/stylesheets/sass/pages/home.scss"; }
