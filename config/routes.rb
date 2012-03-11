@@ -6,7 +6,7 @@ Foodfight::Application.routes.draw do
     end
   end
   
-  resources :searches
+  resources :searches, :only => [:new, :show, :create]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

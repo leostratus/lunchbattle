@@ -9,6 +9,7 @@ class Search < ActiveRecord::Base
   end
   
   def search
+    # move this into some sort of async queue
     @client ||= Yelp::Client.new
     
     search_params = {
