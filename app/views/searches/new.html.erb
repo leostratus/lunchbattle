@@ -1,4 +1,19 @@
-<h1>Select your first challenger</h1>
-<p>Hello friend! You are located in <%= @location %>. Search for a restaurant:</p>
-<%= render 'form' %>
+<div id="intro">
+	<div class="city-intro panel vancouver">
+		<p class="narrate top left">
+			In the city of <strong><%= @location %></strong>...
+		</p>
+		<p class="narrate bottom right emphasis">
+			A group of friends can't decide where to eat...
+		</p>
+	</div>
+</div>
+
+<div id="step1" class="process step search">
+	<h3 class="narrate top left dark">Select your first challenger:</h3>
+
+	<%= render 'form' %>
+</div>
+
+
 
