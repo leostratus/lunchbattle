@@ -1,0 +1,100 @@
+a << 8
+a.uniq
+puts "\\144" * 948
+puts "\\220" * 948
+puts "\\x90" * 948
+Restaurant.new name: 'Sushi'
+r = Restaurant.new name: 'Sushi'
+r = Restaurant.new name: 'Pizza'
+r.save
+w = War.new
+w.restaurant_1 = Restaurant.first
+w.restaurant_2 = Restaurant.last
+w.save
+w.restaurant_1
+q
+quit
+Fights
+Fight.all
+Fight.find(1)
+f = Fight.new 
+f.save
+SecureRandom.uuid
+u.errors
+u = User.new
+u
+u.fight_id = 1
+u.save
+Yelp
+until gets.eof?
+categories = []
+until $stdin.eof?
+  categories << gets.strip
+categories
+categories.map{|e| m = e.match(/^(.*) \((.*)\)$/i); [m[1],m[2]]}
+categories.map!{|e| m = e.match(/^(.*) \((.*)\)$/i); [m[1],m[2]]}
+categories[0]
+categories[0].inspect
+puts categories[0]
+puts categories[0].inspect
+  puts e.inspect
+categories.each do |e|
+  puts e.inspect + ','
+end
+:category => ['sushi']
+,
+require 'yelp'
+Yelp::Review::Request::Location.new(
+client = Yelp::Client.new
+request = Yelp::Review::Request::Location.new(
+:city => 'Vancouver',
+:state => 'BC',
+:category => ['sushi'],
+:yws_id => YELP_YWSID
+)
+response = client.search(request)
+response.keys
+response['message'
+]
+response['businesses'].keys
+response['businesses'].first.keys
+response['businesses'].first[:id]
+response['businesses'].first['id']
+response['businesses'].count
+response['businesses'].first
+response['businesses'].first.to_s
+response['businesses'].first.to_json
+nil.blank?
+    client = Yelp::Client.new
+    
+    search_params = {
+      :city => 'Vancouver',
+      :state => 'BC',
+      :yws_id => YELP_YWSID
+    }
+    request = Yelp::Review::Request::Location.new(search_params)
+    response = client.search(request)
+response['message']
+response['businesses']
+response['businesses'].to_json
+JSON.parse(response['businesses'].to_json)
+Search.all
+@search.new(:category => 'sushi')
+Search.new(:category => 'sushi')
+s = Search.new category: 'sushi'
+s.response.first
+s.response.first.id
+s.response.first['id']
+s = Search.last
+s = Search.find(4)
+s = Search.find(3)
+s.save
+s.response
+Restaurant.create_or_update(s.response.first['id'], s.response.first)
+yelp_id = s.response.first
+yelp_id = s.response.first['id']
+Restaurant.find_by_yelp_id yelp_id
+Restaurant.last
+Search.create :category => 'sushi'
+s = _
+s.search
