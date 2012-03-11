@@ -7,6 +7,7 @@ gem 'rails', '3.2.0'
 
 gem "geocoder"
 gem "jonnii-yelp", :require => "yelp"
+gem 'jquery-rails', ">= 1.0.12"
 # gem "yelpster"
 # gem "devise"
 
@@ -31,8 +32,6 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
-
-gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
