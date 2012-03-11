@@ -30,11 +30,6 @@ class SearchesController < ApplicationController
     end
   end
 
-  # GET /searches/1/edit
-  def edit
-    @search = Search.find(params[:id])
-  end
-
   # POST /searches
   # POST /searches.json
   def create
@@ -48,34 +43,6 @@ class SearchesController < ApplicationController
         format.html { render action: "new" }
         format.json { render json: @search.errors, status: :unprocessable_entity }
       end
-    end
-  end
-
-  # PUT /searches/1
-  # PUT /searches/1.json
-  def update
-    @search = Search.find(params[:id])
-
-    respond_to do |format|
-      if @search.update_attributes(params[:search])
-        format.html { redirect_to @search, notice: 'Search was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: "edit" }
-        format.json { render json: @search.errors, status: :unprocessable_entity }
-      end
-    end
-  end
-
-  # DELETE /searches/1
-  # DELETE /searches/1.json
-  def destroy
-    @search = Search.find(params[:id])
-    @search.destroy
-
-    respond_to do |format|
-      format.html { redirect_to searches_url }
-      format.json { head :no_content }
     end
   end
   

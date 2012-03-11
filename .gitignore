@@ -15,5 +15,6 @@
 /log/*.log
 /tmp
 
+/app/assets/stylesheets/.sass-cache
 
 .rvmrc
