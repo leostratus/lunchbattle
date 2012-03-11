@@ -1,8 +1,20 @@
 #footer 	{
+	width: 100%;
+	text-align: center;
+
+	a, a:visited 	{
+		color: $accent;
+		font-weight: bold;
+	}
+	a:hover 	{
+		color: #F00;
+	}
 	ul 	{
 		text-align: center;
 		padding: 10px;
+		margin: 0;
 		font-size: 12px;
+
 		li 	{
 			display: inline;
 			padding: 0 10px;
