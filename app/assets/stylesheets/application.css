@@ -186,7 +186,7 @@ input[type=text], input[type=password], input[type=email] {
 
 /* line 1, sass/modules/_header.scss */
 #header {
-  background: transparent url(../images/foodsplosion.png) center center no-repeat;
+  background: transparent url(../../images/foodsplosion.png) center center no-repeat;
   background-size: 500px auto;
   margin: -55px 0 -25px;
 }
@@ -202,6 +202,8 @@ input[type=text], input[type=password], input[type=email] {
 #header a.logo img {
   display: block;
   margin: 0 auto;
+  width: 272px;
+  height: 192px;
 }
 
 /* line 3, sass/pages/_home.scss */
