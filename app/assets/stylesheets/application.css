@@ -215,13 +215,28 @@ a.button, button, input[type=submit] {
   height: 192px;
 }
 
-/* line 2, sass/modules/_footer.scss */
+/* line 1, sass/modules/_footer.scss */
+#footer {
+  width: 100%;
+  text-align: center;
+}
+/* line 5, sass/modules/_footer.scss */
+#footer a, #footer a:visited {
+  color: #dd0000;
+  font-weight: bold;
+}
+/* line 9, sass/modules/_footer.scss */
+#footer a:hover {
+  color: #F00;
+}
+/* line 12, sass/modules/_footer.scss */
 #footer ul {
   text-align: center;
   padding: 10px;
+  margin: 0;
   font-size: 12px;
 }
-/* line 6, sass/modules/_footer.scss */
+/* line 18, sass/modules/_footer.scss */
 #footer ul li {
   display: inline;
   padding: 0 10px;
@@ -254,13 +269,14 @@ a.button, button, input[type=submit] {
 .home .step h3 {
   margin: 0;
   font-size: 18px;
+  text-align: left;
 }
-/* line 36, sass/pages/_home.scss */
+/* line 37, sass/pages/_home.scss */
 .home .step input[type=text], .home .step input[type=email] {
   width: 100%;
   margin: 0 0 10px;
 }
-/* line 40, sass/pages/_home.scss */
+/* line 41, sass/pages/_home.scss */
 .home .step a.button {
   display: block;
   width: 60%;
@@ -268,28 +284,28 @@ a.button, button, input[type=submit] {
   margin: 0 auto;
   font-size: 18px;
 }
-/* line 49, sass/pages/_home.scss */
+/* line 50, sass/pages/_home.scss */
 .home .step form div.field {
   width: 50%;
   float: left;
   text-align: left;
 }
-/* line 54, sass/pages/_home.scss */
+/* line 55, sass/pages/_home.scss */
 .home .step form div.field.category {
   padding-left: 15px;
   font-size: 12px;
   font-weight: bold;
 }
-/* line 60, sass/pages/_home.scss */
+/* line 61, sass/pages/_home.scss */
 .home .step form div.field.category select {
   margin: 5px 0;
   font-size: 14px;
 }
-/* line 67, sass/pages/_home.scss */
+/* line 68, sass/pages/_home.scss */
 .home .step .actions {
   clear: both;
 }
-/* line 72, sass/pages/_home.scss */
+/* line 73, sass/pages/_home.scss */
 .home #step1 {
   display: inline-block;
   vertical-align: top;
@@ -298,19 +314,23 @@ a.button, button, input[type=submit] {
   max-width: 480px !important;
   height: 155px;
 }
-/* line 83, sass/pages/_home.scss */
+/* line 84, sass/pages/_home.scss */
 .home #step2, .home #step3 {
   display: none;
 }
 @media screen and (max-device-width: 320px) {
-  /* line 88, sass/pages/_home.scss */
+  /* line 89, sass/pages/_home.scss */
   .home #intro .panel {
     height: 130px !important;
   }
-  /* line 91, sass/pages/_home.scss */
+  /* line 92, sass/pages/_home.scss */
   .home .step {
     width: 320px !important;
     margin: 10px !important;
     padding: 35px 10px 10px;
+  }
+  /* line 97, sass/pages/_home.scss */
+  .home #step1 {
+    width: 260px !important;
   }
 }

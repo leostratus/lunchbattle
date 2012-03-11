@@ -32,6 +32,7 @@
 			//@include comic-text-strong;
 			//font-size: 18px;
 			//color: $accent;
+			text-align: left;
 		}
 		input[type=text], input[type=email] 	{
 			width: 100%;
@@ -92,6 +93,9 @@
 			width: 320px !important;
 			margin: 10px !important;
 			padding: 35px 10px 10px;
+		}
+		#step1 	{
+			width: 260px !important;
 		}
 	}
 }
