@@ -1,8 +1,0 @@
-<div class="restaurant" id="restaurant-<%= restaurant['id'] %>">
-  <span class="photo"><%= image_tag(restaurant['photo_url']) %></span>
-  <span class="rating"><%= image_tag(restaurant['rating_img_url']) %></span>
-  <span class="name"><a href="<%= restaurant['url'] %>" target="_blank"><%= restaurant['name'] %></a></span>
-  <span class="name mobile"><a href="<%= restaurant['mobile_url'] %>" target="_blank"><%= restaurant['name'] %></a></span>
-  <span class="address"><%= format_address(restaurant) %></span>
-  <span class="phone_number"><%= format_phone_number(restaurant['phone']) %></span>
-</div>

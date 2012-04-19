@@ -1,14 +1,19 @@
-<div id="fight-wrapper">
-  <div id="fight">
-    <%= render :partial => "restaurants/restaurant", :locals => { :restaurant => @fight.restaurant_1.response } %>
-    <div class="vote">
-      <b>Votes:</b>
-      <%= @fight.votes_for_1 %> [<%= link_to '+', vote_for_1_fight_path(@fight), method: :put %>]
-    </div>
-    <%= render :partial => "restaurants/restaurant", :locals => { :restaurant => @fight.restaurant_2.response } %>
-    <div class="vote">
-      <b>Votes:</b>
-      <%= @fight.votes_for_2 %> [<%= link_to '+', vote_for_2_fight_path(@fight), method: :put %>]
-    </div>
-  </div>
+<div style="text-align: center"><div id="fight">
+
+<%= render :partial => "result", :locals => { :result => @fight.restaurant_1.response } %>
+
+
+<div>
+  <b>Votes:</b>
+  <%= @fight.votes_for_1 %> [<%= link_to '+', vote_for_1_fight_path(@fight), method: :put %>]
 </div>
+
+<%= render :partial => "result", :locals => { :result => @fight.restaurant_2.response } %>
+
+
+<div>
+  <b>Votes:</b>
+  <%= @fight.votes_for_2 %> [<%= link_to '+', vote_for_2_fight_path(@fight), method: :put %>]
+</div>
+
+</div></div>

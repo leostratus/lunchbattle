@@ -14,7 +14,7 @@ class SearchesController < ApplicationController
     @search = Search.find(params[:id])
 
     respond_to do |format|
-      format.html { render action: "new" }
+      format.html # show.html.erb
       format.json { render json: @search }
     end
   end
@@ -40,8 +40,8 @@ class SearchesController < ApplicationController
     
     respond_to do |format|
       if @search.search
-        format.html { redirect_to @search, notice: 'Search was successfully created.' }
-        format.json { render json: @search, status: :created, location: @search }
+        # format.html { redirect_to @search, notice: 'Search was successfully created.' }
+        # format.json { render json: @search, status: :created, location: @search }
         format.js
       else
         format.html { render action: "new" }
