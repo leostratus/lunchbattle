@@ -36,13 +36,11 @@ class SearchesController < ApplicationController
     params[:search][:query].strip!
     params[:search][:category].strip!
     
-    params[:search][:category] = 'restaurants' if params[:search][:category].blank?
-    
     @search = Search.find_or_create_by_query_and_category(params[:search][:query], params[:search][:category])
     
     respond_to do |format|
       if @search.search
-        format.html { redirect_to @search }
+        format.html { redirect_to @search, notice: 'Search was successfully created.' }
         format.json { render json: @search, status: :created, location: @search }
         format.js
       else
